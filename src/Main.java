@@ -2,16 +2,16 @@ public class Main {
     public static void main(String[] args) {
 
         Cat glitch = new Cat();
-        glitch.name = "Glitch McPixel Tomesh";
-        glitch.age = 13;
-        glitch.weight = 15.0;
-        glitch.sex = 'M';
-        glitch.color = "Tuxedo";
-        //System.out.println(glitch.name);
+        //glitch.name = "Glitch McPixel Tomesh";
+        //glitch.age = 13;
+        //glitch.weight = 15.0;
+        //glitch.sex = 'M';
+        //glitch.color = "Tuxedo";
+        System.out.println(glitch.name);
 
-        Circle c1 = new Circle();
-        Circle c2 = new Circle();
-        c2.setRadius(2.0);
+        Circle c1 = new Circle(7.0);
+        Circle c2 = new Circle(2.0);
+        //c2.setRadius(2.0);
         System.out.println(c1.radius);
         System.out.println(c2.radius);
         c1.setRadius(3.1415);
