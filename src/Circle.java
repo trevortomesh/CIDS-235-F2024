@@ -1,9 +1,9 @@
 public class Circle {
     /** The radius of this circle**/
-    double radius = 1;
+    double radius;
 
-    Circle(double newRadius){
-        radius = newRadius;
+    Circle(double radius){
+        this.radius = radius;
     }
 
     /** Return the area of this circle**/

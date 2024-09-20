@@ -1,23 +1,30 @@
 public class Main {
     public static void main(String[] args) {
 
-        Cat glitch = new Cat();
-        //glitch.name = "Glitch McPixel Tomesh";
-        //glitch.age = 13;
-        //glitch.weight = 15.0;
-        //glitch.sex = 'M';
-        //glitch.color = "Tuxedo";
-        System.out.println(glitch.name);
-
-        Circle c1 = new Circle(7.0);
-        Circle c2 = new Circle(2.0);
-        //c2.setRadius(2.0);
+    int b = 7;
+    printThing(b);
+    //System.out.println(a);
+        Circle c1 = new Circle(6.0);
         System.out.println(c1.radius);
-        System.out.println(c2.radius);
-        c1.setRadius(3.1415);
-        System.out.println("The radius is now "+ c1.radius);
-        System.out.println("The area of my circle is " + c1.getArea());
-        //System.out.println("Hello world!");
+
+//        Cat glitch = new Cat();
+//        //glitch.name = "Glitch McPixel Tomesh";
+//        //glitch.age = 13;
+//        //glitch.weight = 15.0;
+//        //glitch.sex = 'M';
+//        //glitch.color = "Tuxedo";
+//        System.out.println(glitch.name);
+//
+//        Circle c1 = new Circle(7.0);
+//        Circle c2 = new Circle(2.0);
+//        //c2.setRadius(2.0);
+//        System.out.println(c1.radius);
+//        System.out.println(c2.radius);
+//        c1.setRadius(3.1415);
+//        System.out.println("The radius is now "+ c1.radius);
+//        double x = c1.getArea();
+//        System.out.println("The area of my circle is " + c1.getArea());
+//        //System.out.println("Hello world!");
 //        String cat1Name = "Glitch";
 //        String cat2Name = "Haku";
 //        String cat3Name = "Genki";
@@ -57,8 +64,9 @@ public class Main {
 
     }
 
-    public static void sayMeow(String cat, String catColor){
-        System.out.println(cat + " a " + catColor + " cat says MEOW!");
+    public static void printThing(int a){
+        System.out.println(a);
     }
 
 }
+
