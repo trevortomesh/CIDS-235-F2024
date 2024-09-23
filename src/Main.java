@@ -4,8 +4,21 @@ public class Main {
     int b = 7;
     printThing(b);
     //System.out.println(a);
-        Circle c1 = new Circle(6.0);
-        System.out.println(c1.radius);
+        int a;
+        a = 5;
+        Circle c1; //create a reference variable
+        //System.out.println(c1);
+        c1 = new Circle(6.0); //create the object
+        System.out.println(c1);
+        double area = c1.getArea();
+        double rad = c1.radius;
+        System.out.println(rad);
+        int[] x = {1,2,3,4,5};
+        int y = 7;
+
+        System.out.println("x is storing: " + x);
+        System.out.println("y is storing: "+ y);
+        System.out.println("c1 is storing: " + c1);
 
 //        Cat glitch = new Cat();
 //        //glitch.name = "Glitch McPixel Tomesh";
