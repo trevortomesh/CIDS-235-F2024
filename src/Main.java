@@ -1,29 +1,65 @@
 public class Main {
     public static void main(String[] args) {
 
-        int b = 7;
-        int a;
-        a = 5;
-        b = a; //a is 5 and b is 5
-        a = 12;
-        System.out.println("b is now " + b +
-                " and a is now " + a);
+        System.out.println("Before creating objects ");
+        System.out.println("The number of Circle objects is " +
+                Circle.numberOfObjects);
 
-        Circle c1; //create a reference variable
+        //Create c1
+        Circle c1 = new Circle(1.0);
+
+        // display c1 BEFORE c2 is created
+        System.out.println("c1: radius (" +c1.radius +
+                ") and number of Circle objects (" +
+                c1.numberOfObjects+")");
+
+        //Create c2
+        Circle c2 = new Circle(5);
+
+        //modify c1
+        c1.radius = 9;
+
+        System.out.println("\nAfter creating c2 and modifying c1");
+        System.out.println("c1: radius (" +c1.radius +
+                ") and number of Circle objects (" +
+                c1.numberOfObjects+")");
+        System.out.println("c2: radius (" +c2.radius +
+                ") and number of Circle objects (" +
+                c2.numberOfObjects+")");
+
+         //System.out.println(Circle.radius);
+
+//        int b = 7;
+//        int a;
+//        a = 5;
+//        b = a; //a is 5 and b is 5
+//        a = 12;
+//        System.out.println("b is now " + b +
+//                " and a is now " + a);
+
+//        System.out.println(Circle.getNumberOfObjects());
+//        System.out.println(Math.PI);
+//        System.out.println(Math.sqrt(24));
+      //  Circle c1; //create a reference variable
        // System.out.println(c1);
-        c1 = new Circle(6.0); //create the object
-        Circle c2 = new Circle(8.0);
-
-        System.out.println("c1 was " + c1);
-        System.out.println("c2 was " + c2);
-        c2 = c1;
-        System.out.println("c1 is now" + c1);
-        System.out.println("c2 is now " + c2);
+//        c1 = new Circle(6.0); //create the object
+//        System.out.println(c1.getNumberOfObjects());
+//        Circle c2 = new Circle(8.0);
+//        System.out.println(c2.getNumberOfObjects());
+//        Circle c3 = new Circle(22.0);
+//        System.out.println(c3.getNumberOfObjects());
 
 
-        c1.radius = 100;
-        System.out.println("c2 radius is now: " + c2.radius);
-        System.out.println(c1);
+//        System.out.println("c1 was " + c1);
+//        System.out.println("c2 was " + c2);
+//        c2 = c1;
+//        System.out.println("c1 is now" + c1);
+//        System.out.println("c2 is now " + c2);
+
+
+        //c1.radius = 100;
+        //System.out.println("c2 radius is now: " + c2.radius);
+        //System.out.println(c1);
 
 
 //        double area = c1.getArea();

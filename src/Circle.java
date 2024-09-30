@@ -1,9 +1,12 @@
 public class Circle {
+
+    static int numberOfObjects = 0;
     /** The radius of this circle**/
-    double radius;
+    double radius; //data field (instance variable)
 
     Circle(double radius){
         this.radius = radius;
+        numberOfObjects++;
     }
 
     /** Return the area of this circle**/
@@ -18,5 +21,9 @@ public class Circle {
 
     void setRadius(double newRadius){
         radius = newRadius;
+    }
+
+    static int getNumberOfObjects(){
+        return numberOfObjects;
     }
 }
