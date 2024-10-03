@@ -3,29 +3,32 @@ public class Main {
 
         System.out.println("Before creating objects ");
         System.out.println("The number of Circle objects is " +
-                Circle.numberOfObjects);
+                Circle.getNumberOfObjects());
 
         //Create c1
         Circle c1 = new Circle(1.0);
 
         // display c1 BEFORE c2 is created
-        System.out.println("c1: radius (" +c1.radius +
+        System.out.println("c1: radius (" +c1.getRadius() +
                 ") and number of Circle objects (" +
-                c1.numberOfObjects+")");
+                Circle.getNumberOfObjects()+")");
 
         //Create c2
         Circle c2 = new Circle(5);
 
         //modify c1
-        c1.radius = 9;
+        c1.setRadius(9);
 
-        System.out.println("\nAfter creating c2 and modifying c1");
-        System.out.println("c1: radius (" +c1.radius +
-                ") and number of Circle objects (" +
-                c1.numberOfObjects+")");
-        System.out.println("c2: radius (" +c2.radius +
-                ") and number of Circle objects (" +
-                c2.numberOfObjects+")");
+       // c1.numberOfObjects = 1000;
+//      //  c2.numberOfObjects = -12;
+//        Circle.numberOfObjects = 50;
+//        System.out.println("\nAfter creating c2 and modifying c1");
+//        System.out.println("c1: radius (" +c1.radius +
+//                ") and number of Circle objects (" +
+//                c1.numberOfObjects+")");
+//        System.out.println("c2: radius (" +c2.radius +
+//                ") and number of Circle objects (" +
+//                c2.numberOfObjects+")");
 
          //System.out.println(Circle.radius);
 

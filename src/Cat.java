@@ -6,4 +6,6 @@ public class Cat
     double weight;
     String color;
 
+
+
 }
