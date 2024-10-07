@@ -1,24 +1,33 @@
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Before creating objects ");
-        System.out.println("The number of Circle objects is " +
-                Circle.getNumberOfObjects());
+//        System.out.println("Before creating objects ");
+//        System.out.println("The number of Circle objects is " +
+//                Circle.getNumberOfObjects());
 
         //Create c1
         Circle c1 = new Circle(1.0);
 
+        printCircle(c1);
         // display c1 BEFORE c2 is created
-        System.out.println("c1: radius (" +c1.getRadius() +
-                ") and number of Circle objects (" +
-                Circle.getNumberOfObjects()+")");
 
-        //Create c2
-        Circle c2 = new Circle(5);
-
-        //modify c1
-        c1.setRadius(9);
-
+//        int copy = Circle.getNumberOfObjects();
+//        System.out.println("c1: radius (" +c1.getRadius() +
+//                ") and number of Circle objects (" +
+//                Circle.getNumberOfObjects()+")");
+//
+//        copy++;
+//        System.out.println("If there were another circle there " +
+//                        "would be " + copy + " circles!");
+//        System.out.println("However, the number of circles is still " +
+//                Circle.getNumberOfObjects());
+//        //Create c2
+//        Circle c2 = new Circle(5);
+//
+//        //modify c1
+//        c1.setRadius(9);
+//        double area = c1.getArea();
+//        System.out.println("Area is : " + area);
        // c1.numberOfObjects = 1000;
 //      //  c2.numberOfObjects = -12;
 //        Circle.numberOfObjects = 50;
@@ -134,6 +143,11 @@ public class Main {
 
     public static void printThing(int a){
         System.out.println(a);
+    }
+
+    public static void printCircle(Circle c){
+        System.out.println("The area of the circle of radius "
+                + c.getRadius() + " is " + c.getArea());
     }
 
 }
