@@ -1,3 +1,5 @@
+import java.lang.reflect.Array;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -8,7 +10,24 @@ public class Main {
         //Create c1
         Circle c1 = new Circle(1.0);
 
-        printCircle(c1);
+        int[] intArray = {1,2,3,4,5};
+
+        Circle[] circleArray = new Circle[10];
+
+        for(int i = 0; i < circleArray.length; i++){
+            circleArray[i] = new Circle(i+1);
+        }
+        System.out.println(circleArray[9].getRadius());
+
+        //int n = 5;
+        //printAreas(c1, n);
+        //System.out.println("\n" + "Radius is " + c1.getRadius());
+        //System.out.println("n is " + n);
+
+
+
+        //System.out.println("c1 has a value of " + c1);
+        //printCircle(c1);
         // display c1 BEFORE c2 is created
 
 //        int copy = Circle.getNumberOfObjects();
@@ -148,6 +167,16 @@ public class Main {
     public static void printCircle(Circle c){
         System.out.println("The area of the circle of radius "
                 + c.getRadius() + " is " + c.getArea());
+        System.out.println("c has a value of " + c);
+    }
+
+    public static void printAreas(Circle c, int times){
+        System.out.println("Radius \t\tArea");
+        while(times >=1){
+            System.out.println(c.getRadius() + "\t\t" + c.getArea());
+            c.setRadius(c.getRadius() + 1);
+            times--;
+        }
     }
 
 }
