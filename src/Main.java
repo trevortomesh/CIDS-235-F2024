@@ -10,14 +10,23 @@ public class Main {
         //Create c1
         Circle c1 = new Circle(1.0);
 
-        int[] intArray = {1,2,3,4,5};
-
+        int[] intArray = new int[10];
+        //System.out.println(intArray[5]);
+        Circle c2;
+        //System.out.println(c2);
         Circle[] circleArray = new Circle[10];
 
         for(int i = 0; i < circleArray.length; i++){
             circleArray[i] = new Circle(i+1);
         }
-        System.out.println(circleArray[9].getRadius());
+
+
+        //System.out.println(circleArray[0]);
+        c2 = circleArray[3];
+        System.out.println("c2 has a radius of " + c2.getRadius());
+        c2.setRadius(10);
+        System.out.println("circleArray[3].radius is now: " + circleArray[3].getRadius());
+        //System.out.println(circleArray[9].getRadius());
 
         //int n = 5;
         //printAreas(c1, n);
