@@ -1,4 +1,5 @@
 import java.lang.reflect.Array;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,8 +9,16 @@ public class Main {
 //                Circle.getNumberOfObjects());
 
         //Create c1
-        Circle c1 = new Circle(1.0);
 
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter a name for your cat: ");
+        String catName = input.nextLine();
+        Cat cat1 = new Cat();
+        cat1.setName(catName);
+        System.out.println("Cat 1 is now: " + cat1.name);
+        Circle c1 = new Circle(1.0);
+        System.out.println(c1.getArea());
         int[] intArray = new int[10];
         //System.out.println(intArray[5]);
         Circle c2;

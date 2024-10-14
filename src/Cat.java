@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Cat
 {
     String name;
@@ -6,6 +8,13 @@ public class Cat
     double weight;
     String color;
 
-
+    public void setName(){
+        System.out.println("Enter a cat name: ");
+        Scanner input = new Scanner(System.in);
+        String name = input.nextLine();
+        this.name = name;
+    }
 
 }
+
+

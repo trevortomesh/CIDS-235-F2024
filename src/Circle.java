@@ -11,6 +11,8 @@ public class Circle {
 
     /** Return the area of this circle**/
     double getArea(){
+        System.out.println("The Area is " + radius*radius*Math.PI);
+        System.out.println(Math.pow(5,2));
         return radius*radius*Math.PI;
     }
 
