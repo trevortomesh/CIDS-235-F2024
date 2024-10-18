@@ -24,12 +24,14 @@ public class Main {
         Circle c2;
         //System.out.println(c2);
         Circle[] circleArray = new Circle[10];
-
+        System.out.println("circleArray's address is: " + circleArray);
         for(int i = 0; i < circleArray.length; i++){
             circleArray[i] = new Circle(i+1);
+            System.out.println("circleArray["+i+"]: " +circleArray[i]);
         }
 
-
+        System.out.println("The radius of circle 4 is: " +
+                  circleArray[4].getRadius());
         //System.out.println(circleArray[0]);
         c2 = circleArray[3];
         System.out.println("c2 has a radius of " + c2.getRadius());
