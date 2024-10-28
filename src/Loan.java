@@ -77,11 +77,15 @@ public class Loan {
     }
 
     public double getMonthlyPayment(){
-
+        double monthlyInterestRate = annualInterestRate / 1200;
+        double monthlyPayment = loanAmount * monthlyInterestRate /
+                (1-(1/Math.pow(1+monthlyInterestRate, numberOfYears*12)));
+        return monthlyPayment;
     }
 
     public double getTotalPayment(){
-
+        double totalPayment = getMonthlyPayment() * numberOfYears *12;
+        return totalPayment;
     }
 
     /** Return loan date

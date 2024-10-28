@@ -10,33 +10,33 @@ public class Main {
 
         //Create c1
 
-        Scanner input = new Scanner(System.in);
-
-        System.out.println("Enter a name for your cat: ");
-        String catName = input.nextLine();
-        Cat cat1 = new Cat();
-        cat1.setName(catName);
-        System.out.println("Cat 1 is now: " + cat1.name);
-        Circle c1 = new Circle(1.0);
-        System.out.println(c1.getArea());
-        int[] intArray = new int[10];
-        //System.out.println(intArray[5]);
-        Circle c2;
-        //System.out.println(c2);
-        Circle[] circleArray = new Circle[10];
-        System.out.println("circleArray's address is: " + circleArray);
-        for(int i = 0; i < circleArray.length; i++){
-            circleArray[i] = new Circle(i+1);
-            System.out.println("circleArray["+i+"]: " +circleArray[i]);
-        }
-
-        System.out.println("The radius of circle 4 is: " +
-                  circleArray[4].getRadius());
-        //System.out.println(circleArray[0]);
-        c2 = circleArray[3];
-        System.out.println("c2 has a radius of " + c2.getRadius());
-        c2.setRadius(10);
-        System.out.println("circleArray[3].radius is now: " + circleArray[3].getRadius());
+//        Scanner input = new Scanner(System.in);
+//
+//        System.out.println("Enter a name for your cat: ");
+//        String catName = input.nextLine();
+//        Cat cat1 = new Cat();
+//        cat1.setName(catName);
+//        System.out.println("Cat 1 is now: " + cat1.name);
+//        Circle c1 = new Circle(1.0);
+//        System.out.println(c1.getArea());
+//        int[] intArray = new int[10];
+//        //System.out.println(intArray[5]);
+//        Circle c2;
+//        //System.out.println(c2);
+//        Circle[] circleArray = new Circle[10];
+//        System.out.println("circleArray's address is: " + circleArray);
+//        for(int i = 0; i < circleArray.length; i++){
+//            circleArray[i] = new Circle(i+1);
+//            System.out.println("circleArray["+i+"]: " +circleArray[i]);
+//        }
+//
+//        System.out.println("The radius of circle 4 is: " +
+//                  circleArray[4].getRadius());
+//        //System.out.println(circleArray[0]);
+//        c2 = circleArray[3];
+//        System.out.println("c2 has a radius of " + c2.getRadius());
+//        c2.setRadius(10);
+//        System.out.println("circleArray[3].radius is now: " + circleArray[3].getRadius());
         //System.out.println(circleArray[9].getRadius());
 
         //int n = 5;
@@ -177,6 +177,27 @@ public class Main {
 //        String cat6Color = "pink";
 
         //sayMeow(cat1Name,cat6Color);
+
+    Scanner input = new Scanner(System.in);
+
+    System.out.print(
+            "Enter the annual interest rate, for example, 8.25: ");
+    double annualInterestRate = input.nextDouble();
+
+    System.out.println("Enter number of years as an integer: ");
+    int numberOfYears = input.nextInt();
+
+    System.out.println("Enter loan amount, for example, 12000.95: ");
+    double loanAmount = input.nextDouble();
+
+    Loan loan =
+            new Loan(annualInterestRate,numberOfYears,loanAmount);
+
+    System.out.printf("The loan was created on %s\n" +
+            "The monthly payment is %.2f\nThe total payment is %.2f\n",
+            loan.getLoanDate().toString(), loan.getMonthlyPayment(),
+            loan.getTotalPayment());
+
 
     }
 
