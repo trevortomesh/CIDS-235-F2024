@@ -192,11 +192,13 @@ public class Main {
 
     Loan loan =
             new Loan(annualInterestRate,numberOfYears,loanAmount);
+    Loan loan2 = new Loan();
+
 
     System.out.printf("The loan was created on %s\n" +
             "The monthly payment is %.2f\nThe total payment is %.2f\n",
-            loan.getLoanDate().toString(), loan.getMonthlyPayment(),
-            loan.getTotalPayment());
+            loan2.getLoanDate().toString(), loan2.getMonthlyPayment(),
+            loan2.getTotalPayment());
 
 
     }
