@@ -1,8 +1,56 @@
 import java.lang.reflect.Array;
 import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+
+    ArrayList<String> collection1 = new ArrayList<>();
+    collection1.add("Cameron");
+    collection1.add("Mankato");
+    collection1.add("Lakeville");
+    collection1.add("Woodbury");
+    collection1.add("Inver Grove");
+    collection1.add("Apple Valley");
+
+    System.out.println("A list of cities in collection1: ");
+    System.out.println(collection1);
+
+
+
+//        Course course1 = new Course("Web Development");
+//        Course course2 = new Course("Asian History");
+//        Course course3 = new Course("OS Programming");
+//        Course course4 = new Course("Programming Paradigms");
+//
+//        course1.addStudent("Aaron");
+//        course1.addStudent("Bob");
+//        course1.addStudent("Jimbo");
+//
+//        course2.addStudent("Valerie");
+//        course2.addStudent("Steve");
+//        course2.addStudent("Tade");
+//        course2.addStudent("Pingo");
+//
+//        course3.addStudent("Ehren");
+//        course3.addStudent("Sven");
+//
+//        course4.addStudent("Tade");
+//        course4.addStudent("Aaron");
+//        course4.addStudent("Valerie");
+//
+//        System.out.println("Number of students in " + course1.getCourseName() +
+//                " is " + course1.getNumberOfStudents());
+//
+//        String[] students = course1.getStudents();
+//        for(int i = 0; i < course1.getNumberOfStudents(); i++){
+//            System.out.print(students[i] + ",");
+//        }
+//
+//        System.out.println();
+//        System.out.println("Number of students in course2: " +
+//                course2.getNumberOfStudents());
+//
 
 //        System.out.println("Before creating objects ");
 //        System.out.println("The number of Circle objects is " +
@@ -178,27 +226,27 @@ public class Main {
 
         //sayMeow(cat1Name,cat6Color);
 
-    Scanner input = new Scanner(System.in);
-
-    System.out.print(
-            "Enter the annual interest rate, for example, 8.25: ");
-    double annualInterestRate = input.nextDouble();
-
-    System.out.println("Enter number of years as an integer: ");
-    int numberOfYears = input.nextInt();
-
-    System.out.println("Enter loan amount, for example, 12000.95: ");
-    double loanAmount = input.nextDouble();
-
-    Loan loan =
-            new Loan(annualInterestRate,numberOfYears,loanAmount);
-    Loan loan2 = new Loan();
-
-
-    System.out.printf("The loan was created on %s\n" +
-            "The monthly payment is %.2f\nThe total payment is %.2f\n",
-            loan2.getLoanDate().toString(), loan2.getMonthlyPayment(),
-            loan2.getTotalPayment());
+//    Scanner input = new Scanner(System.in);
+//
+//    System.out.print(
+//            "Enter the annual interest rate, for example, 8.25: ");
+//    double annualInterestRate = input.nextDouble();
+//
+//    System.out.println("Enter number of years as an integer: ");
+//    int numberOfYears = input.nextInt();
+//
+//    System.out.println("Enter loan amount, for example, 12000.95: ");
+//    double loanAmount = input.nextDouble();
+//
+//    Loan loan =
+//            new Loan(annualInterestRate,numberOfYears,loanAmount);
+//    Loan loan2 = new Loan();
+//
+//
+//    System.out.printf("The loan was created on %s\n" +
+//            "The monthly payment is %.2f\nThe total payment is %.2f\n",
+//            loan2.getLoanDate().toString(), loan2.getMonthlyPayment(),
+//            loan2.getTotalPayment());
 
 
     }
