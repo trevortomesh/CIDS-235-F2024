@@ -1,20 +1,70 @@
 import java.lang.reflect.Array;
 import java.util.Scanner;
 import java.util.*;
+import java.math.*;
+
 
 public class Main {
     public static void main(String[] args) {
 
-    ArrayList<String> collection1 = new ArrayList<>();
-    collection1.add("Cameron");
-    collection1.add("Mankato");
-    collection1.add("Lakeville");
-    collection1.add("Woodbury");
-    collection1.add("Inver Grove");
-    collection1.add("Apple Valley");
+        ArrayList<Wheel> wheels = new ArrayList<>();
+        wheels.add(new Wheel());
+        wheels.add(new Wheel());
+        wheels.add(new Wheel());
+        wheels.add(new Wheel());
+        System.out.println(wheels);
+        //Car car = new Car(wheels);
 
-    System.out.println("A list of cities in collection1: ");
-    System.out.println(collection1);
+       // car.printWheels();
+
+
+//        BigInteger a = new BigInteger("92233720306854775807");
+//        BigInteger b = new BigInteger("2");
+//        BigInteger c = a.multiply(b);
+
+//        BigDecimal d = new BigDecimal("1.0");
+//        BigDecimal e = new BigDecimal("3");
+//        BigDecimal f = d.divide(e, 20, RoundingMode.HALF_UP);
+//
+//        System.out.println(f);
+//
+//        System.out.println(c);
+//        long x0;
+//        Integer myInt = 100;
+//        x0 = myInt;
+//        System.out.println(x0);
+//        //Integer x1 = Integer.valueOf(x0);
+//        // Integer myInt = new Integer("100");
+//        String myString = myInt.toString();
+//        //System.out.println(x1);
+//        //myInt.toString();
+//        Double myDouble = 5.5;
+//        Character myChar = 'A';
+
+//    System.out.println(myInt.doubleValue());
+//    System.out.println(myDouble.intValue());
+//    System.out.println(myChar.hashCode());
+
+
+//    ArrayList<String> collection1 = new ArrayList<>();
+//    collection1.add("Cameron");
+//    collection1.add("Mankato");
+//    collection1.add("Lakeville");
+//    collection1.add("Woodbury");
+//    collection1.add("Inver Grove");
+//    collection1.add("Apple Valley");
+//
+//    ArrayList<Integer> pokeNum = new ArrayList<>();
+//    ArrayList<String> pokeName = new ArrayList<>();
+
+//    pokeNum.add(25);
+//    pokeName.add("Pikachu");
+//    System.out.println("Pokedex ");
+//    System.out.println(pokeName + " " + pokeNum);
+
+
+//    System.out.println("A list of cities in collection1: ");
+//    System.out.println(collection1);
 
 
 
