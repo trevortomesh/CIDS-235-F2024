@@ -8,11 +8,18 @@ public class Main {
     public static void main(String[] args) {
 
         ArrayList<Wheel> wheels = new ArrayList<>();
-        wheels.add(new Wheel());
-        wheels.add(new Wheel());
-        wheels.add(new Wheel());
-        wheels.add(new Wheel());
-        System.out.println(wheels);
+//        wheels.add(new Wheel());
+//        wheels.add(new Wheel());
+//        wheels.add(new Wheel());
+//        wheels.add(new Wheel());
+
+//        Car auntMae = new Car(wheels);
+//        auntMae.printWheels();
+
+        House ourHouse = new House();
+        ourHouse.getRoomsList();
+
+       // System.out.println(wheels);
         //Car car = new Car(wheels);
 
        // car.printWheels();

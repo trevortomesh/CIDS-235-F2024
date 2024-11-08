@@ -7,7 +7,7 @@ public class Car {
     }
 
     public void printWheels(){
-        System.out.println(wheels);
+        System.out.println("My car has the following wheels: " + wheels);
     }
 
     // other methods and stuff
