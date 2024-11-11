@@ -18,11 +18,14 @@ public class Main {
 
         House ourHouse = new House();
         ourHouse.getRoomsList();
+        Room lonelyRoom = new Room("Lonely Room");
+        System.out.println(lonelyRoom.getRoomName());
 
        // System.out.println(wheels);
-        //Car car = new Car(wheels);
 
-       // car.printWheels();
+        Car car = new Car(wheels);
+
+        car.printWheels();
 
 
 //        BigInteger a = new BigInteger("92233720306854775807");
