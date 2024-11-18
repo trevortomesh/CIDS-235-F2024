@@ -7,7 +7,14 @@ import java.math.*;
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<Wheel> wheels = new ArrayList<>();
+        Circle circlething = new Circle(2);
+//        System.out.println(circlething.getArea());
+//        System.out.println(circlething.getColor());
+//
+//        Rectangle rectanglething = new Rectangle(1.0,1.0,"Pink", true);
+//        System.out.println(rectanglething.getColor());
+
+        //ArrayList<Wheel> wheels = new ArrayList<>();
 //        wheels.add(new Wheel());
 //        wheels.add(new Wheel());
 //        wheels.add(new Wheel());
@@ -16,16 +23,16 @@ public class Main {
 //        Car auntMae = new Car(wheels);
 //        auntMae.printWheels();
 
-        House ourHouse = new House();
-        ourHouse.getRoomsList();
-        Room lonelyRoom = new Room("Lonely Room");
-        System.out.println(lonelyRoom.getRoomName());
-
-       // System.out.println(wheels);
-
-        Car car = new Car(wheels);
-
-        car.printWheels();
+//        House ourHouse = new House();
+//        ourHouse.getRoomsList();
+//        Room lonelyRoom = new Room("Lonely Room");
+//        System.out.println(lonelyRoom.getRoomName());
+//
+//       // System.out.println(wheels);
+//
+//        Car car = new Car(wheels);
+//
+//        car.printWheels();
 
 
 //        BigInteger a = new BigInteger("92233720306854775807");
