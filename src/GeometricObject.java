@@ -4,12 +4,12 @@ public class GeometricObject {
     private java.util.Date dateCreated;
 
     public GeometricObject() {
-        System.out.println("Default Geometric Object Constructor Called!");
+       // System.out.println("Default Geometric Object Constructor Called!");
         dateCreated= new java.util.Date();
     }
 
     public GeometricObject(String color, boolean filled) {
-        System.out.println("Parameterized Geometric Object Constructor Called!");
+       // System.out.println("Parameterized Geometric Object Constructor Called!");
         dateCreated = new java.util.Date();
         this.color = color;
         this.filled = filled;

@@ -7,13 +7,19 @@ import java.math.*;
 public class Main {
     public static void main(String[] args) {
 
-        Circle circlething = new Circle(2);
+          Faculty faculty = new Faculty();
+          // a) "Performs Faculty's tasks"
+          // b) "Performs Employee's tasks"
+          // c) "Performs Person's tasks"
+          // d) "Invokes employee's overloaded constructor"
+
+//        Circle circlething = new Circle(2);
 //        System.out.println(circlething.getArea());
 //        System.out.println(circlething.getColor());
-//
+////
 //        Rectangle rectanglething = new Rectangle(1.0,1.0,"Pink", true);
 //        System.out.println(rectanglething.getColor());
-
+//        System.out.println(rectanglething.getArea());
         //ArrayList<Wheel> wheels = new ArrayList<>();
 //        wheels.add(new Wheel());
 //        wheels.add(new Wheel());

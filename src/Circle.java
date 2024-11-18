@@ -5,15 +5,16 @@ public class Circle extends GeometricObject{
     private double radius; //data field (instance variable)
 
     public Circle(){
-        System.out.println("Default Circle Constructor Called");
+        //System.out.println("Default Circle Constructor Called");
         this.radius= 1.0;
     }
 
     public Circle(double radius){
+        //super();
         this.radius = radius;
         //numberOfObjects++;
         //this(1.0,"white",true);
-        System.out.println("Circle Constructor Called");
+        //System.out.println("Circle Constructor Called");
 
     }
 
@@ -21,7 +22,7 @@ public class Circle extends GeometricObject{
         this.radius=radius;
         setColor(color);
         setFilled(filled);
-        System.out.println("Circle Constructor Called");
+        //System.out.println("Circle Constructor Called");
 
     }
 
