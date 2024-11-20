@@ -7,7 +7,13 @@ import java.math.*;
 public class Main {
     public static void main(String[] args) {
 
-          Faculty faculty = new Faculty();
+        Circle newCirc = new Circle();
+        System.out.println(newCirc.toString());
+        Rectangle newRect = new Rectangle(3.1415,2.718);
+        System.out.println(newRect.toString());
+
+
+         // Faculty faculty = new Faculty();
           // a) "Performs Faculty's tasks"
           // b) "Performs Employee's tasks"
           // c) "Performs Person's tasks"

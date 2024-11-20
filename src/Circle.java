@@ -55,8 +55,11 @@ public class Circle extends GeometricObject{
         return 2*radius;
     }
 
-    public void printCircle(){
-        System.out.println("the circle was created "+getDateCreated()+
-                " and the radius is "+getDateCreated());
+    @Override
+    public String toString(){
+//        System.out.println("the circle was created "+ getDateCreated()+
+//                " and the radius is "+getRadius());
+        return("the circle was created " + getDateCreated() +
+                " and the radius is "+getRadius());
     }
 }
