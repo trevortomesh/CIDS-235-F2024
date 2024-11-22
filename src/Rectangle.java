@@ -39,4 +39,9 @@ public class Rectangle extends GeometricObject{
     public double getPerimeter(){
         return 2*(width+height);
     }
+
+    public String toString(){
+
+        return "rectangle " + super.toString() + "\nand the area is " + this.getArea();
+    }
 }

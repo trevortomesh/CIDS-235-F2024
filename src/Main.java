@@ -7,10 +7,16 @@ import java.math.*;
 public class Main {
     public static void main(String[] args) {
 
-        Circle newCirc = new Circle();
-        System.out.println(newCirc.toString());
-        Rectangle newRect = new Rectangle(3.1415,2.718);
-        System.out.println(newRect.toString());
+        Circle c1 = new Circle(2.3, "orange", true);
+        displayObject(c1);
+
+        Rectangle r1 = new Rectangle(2,5);
+        displayObject(r1);
+
+//        Circle newCirc = new Circle();
+//        System.out.println(newCirc.toString());
+//        Rectangle newRect = new Rectangle(3.1415,2.718);
+//        System.out.println(newRect.toString());
 
 
          // Faculty faculty = new Faculty();
@@ -327,6 +333,12 @@ public class Main {
 //            loan2.getLoanDate().toString(), loan2.getMonthlyPayment(),
 //            loan2.getTotalPayment());
 
+
+    }
+
+    public static void displayObject(GeometricObject object){
+        System.out.println("Created on " + object.getDateCreated() +". Color is " +
+                            object.getColor() + " radius is " + object.getRadius());
 
     }
 

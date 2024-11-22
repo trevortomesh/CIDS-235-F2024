@@ -59,7 +59,6 @@ public class Circle extends GeometricObject{
     public String toString(){
 //        System.out.println("the circle was created "+ getDateCreated()+
 //                " and the radius is "+getRadius());
-        return("the circle was created " + getDateCreated() +
-                " and the radius is "+getRadius());
+        return "circle " + super.toString() + "\nand the radius is "+getRadius();
     }
 }
