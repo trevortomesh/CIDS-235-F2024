@@ -40,8 +40,8 @@ public class Rectangle extends GeometricObject{
         return 2*(width+height);
     }
 
-    public String toString(){
-
-        return "rectangle " + super.toString() + "\nand the area is " + this.getArea();
-    }
+//    public String toString(){
+//
+//        return "rectangle " + super.toString() + "\nand the area is " + this.getArea();
+//    }
 }

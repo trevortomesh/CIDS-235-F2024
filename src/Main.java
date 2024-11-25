@@ -7,11 +7,15 @@ import java.math.*;
 public class Main {
     public static void main(String[] args) {
 
-        Circle c1 = new Circle(2.3, "orange", true);
-        displayObject(c1);
 
-        Rectangle r1 = new Rectangle(2,5);
-        displayObject(r1);
+        Object o = new GeometricObject();
+        System.out.println(o.toString());
+
+//        Circle c1 = new Circle(2.3, "orange", true);
+//        displayObject(c1);
+//        System.out.println("----------------------------");
+//        Rectangle r1 = new Rectangle(2,5);
+//        displayObject(r1);
 
 //        Circle newCirc = new Circle();
 //        System.out.println(newCirc.toString());
@@ -337,8 +341,7 @@ public class Main {
     }
 
     public static void displayObject(GeometricObject object){
-        System.out.println("Created on " + object.getDateCreated() +". Color is " +
-                            object.getColor() + " radius is " + object.getRadius());
+        System.out.println(object.toString());
 
     }
 
