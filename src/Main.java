@@ -7,9 +7,14 @@ import java.math.*;
 public class Main {
     public static void main(String[] args) {
 
+    m(new GraduateStudent());
+    m(new Student());
 
-        Object o = new GeometricObject();
-        System.out.println(o.toString());
+    m(new Person());
+    m(new Object());
+
+//        Object o = new GeometricObject();
+//        System.out.println(o.toString());
 
 //        Circle c1 = new Circle(2.3, "orange", true);
 //        displayObject(c1);
@@ -337,7 +342,10 @@ public class Main {
 //            loan2.getLoanDate().toString(), loan2.getMonthlyPayment(),
 //            loan2.getTotalPayment());
 
+    }
 
+    public static void m(Object x){
+        System.out.println(x.toString());
     }
 
     public static void displayObject(GeometricObject object){
