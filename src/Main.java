@@ -7,12 +7,26 @@ import java.math.*;
 public class Main {
     public static void main(String[] args) {
 
-    m(new GraduateStudent());
-    m(new Student());
+//    Object thing = new GraduateStudent();
+//    Student researchAssistant = new GraduateStudent();
+//    //GraduateStudent teachingAssistant = new Student();
+//    m(new GraduateStudent());
+//    m(new Student());
+//
+//    m(new Person());
+//    m(new Object());
 
-    m(new Person());
-    m(new Object());
+    // m(new Student)
+    Object o = new GraduateStudent(); // implicit upcast
 
+        System.out.println(o instanceof Student);
+    if(o instanceof Student) {
+        Student b = (Student) o; //explicit downcast
+        m(b);
+    }
+    else{System.out.println("That's not a student!!!");
+        }
+    m(o);
 //        Object o = new GeometricObject();
 //        System.out.println(o.toString());
 
@@ -344,7 +358,7 @@ public class Main {
 
     }
 
-    public static void m(Object x){
+    public static void m(Object x){ // implicit cast to Object
         System.out.println(x.toString());
     }
 
