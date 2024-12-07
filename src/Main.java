@@ -1,3 +1,5 @@
+import org.w3c.dom.css.Rect;
+
 import java.lang.reflect.Array;
 import java.util.Scanner;
 import java.util.*;
@@ -17,16 +19,26 @@ public class Main {
 //    m(new Object());
 
     // m(new Student)
-    Object o = new GraduateStudent(); // implicit upcast
+    //Object o = new GraduateStudent(); // implicit upcast
+        Cat cat = new Cat();
+        Student s = new Student();
+        Rectangle r = new Rectangle(5,10);
+        Circle c = new Circle(5);
+        displayObject(c);
+        displayObject(r);
+        displayObject(s);
+        displayObject(cat);
 
-        System.out.println(o instanceof Student);
-    if(o instanceof Student) {
-        Student b = (Student) o; //explicit downcast
-        m(b);
-    }
-    else{System.out.println("That's not a student!!!");
-        }
-    m(o);
+
+//        //Student studentc = (Student) c;
+//        System.out.println(o instanceof Person);
+//    if(o instanceof Student) {
+//        Student b = (Student) o; //explicit downcast
+//        m(b);
+//    }
+//    else{System.out.println("That's not a student!!!");
+//        }
+//    m(o);
 //        Object o = new GeometricObject();
 //        System.out.println(o.toString());
 
@@ -362,9 +374,19 @@ public class Main {
         System.out.println(x.toString());
     }
 
-    public static void displayObject(GeometricObject object){
-        System.out.println(object.toString());
-
+    // Object object = r;
+    public static void displayObject(Object object) {
+        if (object instanceof Circle) {
+            System.out.println("The circle area is " +
+                    ((Circle) object).getArea());
+            System.out.println("The circle diameter is " +
+                    ((Circle) object).getDiameter());
+        } else if (object instanceof Rectangle) {
+            System.out.println("The rectangle area is " +
+                    ((Rectangle)object).getArea());
+        } else {
+            System.out.println(object.toString());
+        }
     }
 
     public static void printThing(int a){
