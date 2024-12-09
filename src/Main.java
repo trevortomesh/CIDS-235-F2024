@@ -29,6 +29,8 @@ public class Main {
         displayObject(s);
         displayObject(cat);
 
+       // GeometricObject geoObject = new GeometricObject();
+
 
 //        //Student studentc = (Student) c;
 //        System.out.println(o instanceof Person);

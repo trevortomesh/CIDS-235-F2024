@@ -1,14 +1,14 @@
-public class GeometricObject {
+public abstract class GeometricObject {
     private String color ="white";
     private boolean filled;
     private java.util.Date dateCreated;
 
-    public GeometricObject() {
+    protected GeometricObject() {
        // System.out.println("Default Geometric Object Constructor Called!");
         dateCreated= new java.util.Date();
     }
 
-    public GeometricObject(String color, boolean filled) {
+    protected GeometricObject(String color, boolean filled) {
        // System.out.println("Parameterized Geometric Object Constructor Called!");
         dateCreated = new java.util.Date();
         this.color = color;
@@ -40,4 +40,9 @@ public class GeometricObject {
                 " and filled: "+ filled;
     }
 
+    /** Abstract method getArea**/
+    public abstract double getArea();
+
+    /**Abstract method getPerimeter*/
+    public abstract double getPerimeter();
 }
