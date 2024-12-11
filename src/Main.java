@@ -18,18 +18,29 @@ public class Main {
 //    m(new Person());
 //    m(new Object());
 
-    // m(new Student)
-    //Object o = new GraduateStudent(); // implicit upcast
-        Cat cat = new Cat();
-        Student s = new Student();
-        Rectangle r = new Rectangle(5,10);
-        Circle c = new Circle(5);
-        displayObject(c);
-        displayObject(r);
-        displayObject(s);
-        displayObject(cat);
+        Object[] objects = {new Tiger(), new Chicken(), new Apple()};
+        for(int i = 0; i < objects.length; i++){
+            if(objects[i] instanceof Edible){
+                System.out.println(((Edible)objects[i]).howToEat());
+            }
 
-       // GeometricObject geoObject = new GeometricObject();
+            if(objects[i] instanceof Animal){
+                System.out.println(((Animal)objects[i]).sound());
+            }
+        }
+
+//    // m(new Student)
+//    //Object o = new GraduateStudent(); // implicit upcast
+//        Cat cat = new Cat();
+//        Student s = new Student();
+//        Rectangle r = new Rectangle(5,10);
+//        Circle c = new Circle(5);
+//        displayObject(c);
+//        displayObject(r);
+//        displayObject(s);
+//        displayObject(cat);
+//        double pi = Math.PI;
+//       // GeometricObject geoObject = new GeometricObject();
 
 
 //        //Student studentc = (Student) c;

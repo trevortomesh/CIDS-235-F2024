@@ -1,4 +1,4 @@
-public class WonkyRectangle extends GeometricObject{
+public class WonkyRectangle{
     private double width;
     private double height;
 
@@ -11,8 +11,8 @@ public class WonkyRectangle extends GeometricObject{
                      String color, boolean filled){
         this.width = width;
         this.height = height;
-        setColor(color);
-        setFilled(filled);
+       // setColor(color);
+       // setFilled(filled);
 
     }
 
